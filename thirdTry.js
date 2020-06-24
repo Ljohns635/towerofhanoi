@@ -44,13 +44,13 @@ const backDropClicksFour = function (evt) {
 }
 
 //FIFTH FUNCTION
-// const backDropClicksFive = function (evt) {
-//   console.log(evt)
-//   const selection = evt.target.lastElementChild
-//   console.log(selection)
-//   selection.
-//   const move = document.querySelector('.rod')
-// }
+const backDropClicksFive = function (evt) {
+  console.log(evt)
+  const selection = evt.target.lastElementChild
+  console.log(selection)
+  const move = document.querySelector('#rod1new')
+  move.appendChild(selection)
+}
 
 
 //SELECT FIRST DIV
@@ -70,7 +70,8 @@ const whenClickedFour = document.querySelector('#rod3')
 whenClickedThird.addEventListener('click', backDropClicksFour)
 
 //SELECT SECOND DIV AND MOVE IT TO FIRST
-
+const whenClickedFive = document.querySelector("#rod1new")
+whenClickedFour.addEventListener('click', backDropClicksFive)
 
 
 
